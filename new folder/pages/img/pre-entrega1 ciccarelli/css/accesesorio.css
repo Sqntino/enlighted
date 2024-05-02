@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "Mustica";
+    src:url(/fuentes/MusticaPro-SemiBold.otf);
+}
+.container{
+    background-color: #424141;;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mustica";
+    flex-direction: row;
+    text-align: center;
+}
+body{
+    background-color: #737373;
+    font-family: "Mustica";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+footer{
+    background-color: #424242;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.container img{
+    position: absolute;
+    left: 10;
+    top: 16px;
+}
+.imagen-contendora{
+    width: 150px;
+    height: auto;
+}
+.cajas{
+    background-color: #4f4f4f;
+    margin: 30px 70px 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    line-height: 200px;  
+}
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1050px;
+    margin: 5% auto;
+}
+
+.textos-alineados{
+    text-align: center;
+}
