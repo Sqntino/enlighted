@@ -4,9 +4,9 @@
 }
 @font-face{
     font-family: "Mustica";
-    src:url(/fuentes/MusticaPro-SemiBold.otf);
+    src:url(/assets/fuente/MusticaPro-SemiBold.otf);
 }
-.container{
+.contenedor{
     background-color: #424141;
     height: 80px;
     display: flex;
@@ -16,11 +16,10 @@
     flex-direction: row;
     text-align: center;
 }
-body{
-    background-color: #737373;
-    font-family: "Mustica";
-    font-weight: 400;
-    font-style: normal;
+.contenedor img{
+    position: absolute;
+    left: 10;
+    top: 16px;
 }
 footer{
     background-color: #424242;
@@ -30,14 +29,14 @@ footer{
     bottom: 0;
     width: 100%;
 }
-.acomode-lista{
+body{
+    background-color: #737373;
+    font-family: "Mustica";
+    font-weight: 400;
+    font-style: normal;
+}
+.imagen-centrada{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 23px;
-}
-.container img{
-    position: absolute;
-    left: 10;
-    top: 16px;
 }

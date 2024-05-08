@@ -1,13 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-@font-face{
+
+@font-face {
     font-family: "Mustica";
-    src:url(/fuentes/MusticaPro-SemiBold.otf);
+    src: url(/assets/fuente/MusticaPro-SemiBold.otf);
+
 }
-.container{
-    background-color: #424141;;
+
+.contenedor {
+    background-color: #424141;
+    ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -16,14 +20,16 @@
     flex-direction: row;
     text-align: center;
 }
-body{
+
+body {
     background-color: #737373;
     font-family: "Mustica";
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
 }
-footer{
+
+footer {
     background-color: #424242;
     padding: 1em 0;
     text-align: center;
@@ -31,30 +37,22 @@ footer{
     bottom: 0;
     width: 100%;
 }
-.container img{
+
+.contenedor img {
     position: absolute;
     left: 10;
     top: 16px;
 }
-.imagen-contendora{
-    width: 150px;
-    height: auto;
-}
-.cajas{
-    background-color: #4f4f4f;
-    margin: 30px 70px 5px;
-    height: 200px;
-    width: 200px;
-    border-radius: 30px;
-    line-height: 200px;  
-}
-.productos{
-    display: flex;
-    flex-flow: row wrap;
-    width: 1050px;
-    margin: 5% auto;
+
+.blanco {
+    color: #aaaaaa;
+    text-shadow: 5px 5px 10px black;
+    margin-top: 50px;
 }
 
-.textos-alineados{
-    text-align: center;
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
 }
