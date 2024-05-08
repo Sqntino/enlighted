@@ -216,14 +216,16 @@ header nav div img {
     .container-2 {
         margin-bottom: 40px;
     }
-    .flex-container div{
+
+    .flex-container div {
         margin-right: 310px;
     }
-    .flex-container{
-    }
-    .footer p{
+
+    .flex-container {}
+
+    .footer p {
         padding-right: 300px;
-        
+
     }
 }
 
@@ -263,7 +265,7 @@ header nav div img {
 
     .h2-mas-vendidos {
         padding-left: 260px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .footer {
