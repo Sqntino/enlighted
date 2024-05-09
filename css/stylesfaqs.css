@@ -56,3 +56,38 @@ footer {
     justify-content: space-between;
     padding: 40px;
 }
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        height: 10px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        
+    }
+    .productos{
+        width: 100%;
+        
+    }
+    .cajas{
+        margin: 0 5px;
+        margin-bottom: 10px;
+        width: 190px;
+        height: 190px;
+    }
+    .textos-alineados{
+        margin-bottom: 10px;
+    }
+    .imagen-contendora{
+        width: 10px;
+    }
+}

@@ -187,24 +187,29 @@ header nav div img {
     }
 
     .h1-ultimo-drop {
-        padding-left: 200px;
-        padding-top: 30px;
+        padding-left: 140px;
+        padding-top: 40px;
         text-shadow: 5px 5px 30px;
         color: #000000;
     }
+    .header{
+        width: 1000%;
+        
+    }
 
     .h1-centrado {
-        position: absolute;
         top: 10px;
-        left: 30px;
-        width: 500px;
+        left: 10px;
+        width: 450px;
         color: #a90000;
         text-shadow: 5px 5px 25px #a90000;
     }
 
     .h2-mas-vendidos {
-        padding-right: 300px;
+        padding-left: 130px;
         font-size: 30px;
+        padding-top: 10px;
+        
     }
 
     .footer {
@@ -215,17 +220,7 @@ header nav div img {
 
     .container-2 {
         margin-bottom: 40px;
-    }
-
-    .flex-container div {
-        margin-right: 310px;
-    }
-
-    .flex-container {}
-
-    .footer p {
-        padding-right: 300px;
-
+        padding-left: 80px;
     }
 }
 
@@ -249,7 +244,7 @@ header nav div img {
 
     .h1-ultimo-drop {
         padding-left: 300px;
-        padding-top: 30px;
+        padding-top: 40px;
         text-shadow: 5px 5px 30px;
         color: #000000;
     }
