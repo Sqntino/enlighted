@@ -110,7 +110,6 @@ footer {
 
     .productos {
         width: 100%;
-
     }
 
     .cajas {
@@ -124,8 +123,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .imagen-contendora {
-        width: 10px;
+    .imagen-contendora{
     }
 }
 /* tablet */

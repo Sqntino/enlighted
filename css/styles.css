@@ -200,7 +200,7 @@ header nav div img {
     .h1-centrado {
         top: 10px;
         left: 10px;
-        width: 450px;
+        width: 400px;
         color: #a90000;
         text-shadow: 5px 5px 25px #a90000;
     }
@@ -209,13 +209,17 @@ header nav div img {
         padding-left: 130px;
         font-size: 30px;
         padding-top: 10px;
-        
     }
 
     .footer {
         position: fixed;
         bottom: 0;
+        width: 100px;
         height: 50px;
+        width: 100%;
+    }
+    .footer p{
+        padding-right: 850px;
     }
 
     .container-2 {

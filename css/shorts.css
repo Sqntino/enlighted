@@ -79,9 +79,12 @@ footer{
 .flecha {
     margin-left: 10px;
 }
+.cajas img{
+    width: 230px;
+}
 
 /* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
         position: fixed;
         bottom: 0;
@@ -111,8 +114,8 @@ footer{
     .textos-alineados{
         margin-bottom: 10px;
     }
-    .imagen-contendora{
-        width: 10px;
+    .cajas img{
+        width: 200px;
     }
 }
 /* tablet */

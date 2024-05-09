@@ -87,7 +87,7 @@ footer {
 }
 
 /* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
         position: fixed;
         bottom: 0;
