@@ -1,0 +1,26 @@
+.container-1{
+    background-color: #424141;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mustica";
+    flex-direction: row;
+    text-align: center;
+    }
+    img{
+        position: absolute;
+        left: 10;
+        top: 16px;
+    }
+    .flecha img{
+        margin-right: 100px;
+        width: 60px;
+    }
+.acomode-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 40px;
+}

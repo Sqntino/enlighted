@@ -1,0 +1,27 @@
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    .blanco {
+        color: #aaaaaa;
+        text-shadow: 5px 5px 10px black;
+        margin-top: 50px;
+    }
+}
+.contenedor {
+    background-color: #424141;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mustica";
+    flex-direction: row;
+    text-align: center;
+    img{
+        width: 60px;
+        margin-left: 10px;
+    }
+}
+
+

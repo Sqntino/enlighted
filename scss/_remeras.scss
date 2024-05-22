@@ -1,0 +1,22 @@
+.container-1 {
+    background-color: #424141;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mustica";
+    flex-direction: row;
+    text-align: center;
+}
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1400px;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+}
+

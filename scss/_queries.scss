@@ -1,0 +1,65 @@
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .header {
+        width: 1000%;
+
+        .h1-centrado {
+            top: 10px;
+            left: 10px;
+            width: 400px;
+            color: #a90000;
+            text-shadow: 5px 5px 25px #a90000;
+        }
+    }
+
+
+    body .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "izq"
+            "der";
+
+        .izq {
+            grid-area: izq;
+        }
+
+        .der {
+            grid-area: der;
+        }
+
+        .h1-ultimo-drop {
+            padding-left: 140px;
+            padding-top: 40px;
+            text-shadow: 5px 5px 30px;
+            color: #000000;
+        }
+
+        .h2-mas-vendidos {
+            padding-left: 130px;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            width: 80%;
+
+            p {
+                padding-right: 850px;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 20px;
+                height: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
