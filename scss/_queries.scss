@@ -63,3 +63,81 @@
         }
     }
 }
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    header {
+        width: 100%;
+    }
+
+    body .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "izq"
+            "der";
+            .izq {
+                grid-area: izq;
+            }
+        
+            .der {
+                grid-area: der;
+            }
+            .h1-ultimo-drop {
+                padding-left: 300px;
+                padding-top: 40px;
+                text-shadow: 5px 5px 30px;
+                color: #000000;
+            }
+        
+            .h1-centrado {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                width: 750px;
+                color: #a90000;
+                text-shadow: 5px 5px 25px #a90000;
+            }
+        
+        
+            .h2-mas-vendidos {
+                padding-left: 260px;
+                font-size: 30px;
+            }
+        
+            .footer {
+                position: fixed;
+                bottom: 0;
+                height: 50px;
+            }
+        
+            .container-2 {
+                margin-bottom: 40px;
+            }
+        
+            .productos {
+                width: 100%;
+                padding-bottom: 400px;
+            }
+        
+            .cajas {
+                margin: 0px;
+            }
+        
+            .textos-alineados {
+                margin: 5px;
+            }
+        
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 20px;
+                height: 20px;
+                width: 100%;
+            }
+        
+            footer p {
+                padding-right: 0px;
+            }
+        }
+    }

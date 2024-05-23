@@ -141,12 +141,6 @@ body .h2-mas-vendidos {
   text-align: center;
 }
 
-img {
-  position: absolute;
-  left: 10;
-  top: 16px;
-}
-
 .flecha img {
   margin-right: 100px;
   width: 60px;
@@ -195,18 +189,6 @@ img {
   text-align: center;
 }
 
-.productos {
-  display: flex;
-  flex-flow: row wrap;
-  width: 1400px;
-  margin: 5% auto;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  display: flex;
-}
-
 .container-3 {
   background-color: #424141;
   height: 80px;
@@ -229,15 +211,124 @@ img {
   text-align: center;
 }
 
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    width: 1000%;
+  }
+  .header .h1-centrado {
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    color: #a90000;
+    text-shadow: 5px 5px 25px #a90000;
+  }
+  body .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "izq" "der";
+  }
+  body .grid .izq {
+    grid-area: izq;
+  }
+  body .grid .der {
+    grid-area: der;
+  }
+  body .grid .h1-ultimo-drop {
+    padding-left: 140px;
+    padding-top: 40px;
+    text-shadow: 5px 5px 30px;
+    color: #000000;
+  }
+  body .grid .h2-mas-vendidos {
+    padding-left: 130px;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  body .grid .footer {
+    position: fixed;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    width: 80%;
+  }
+  body .grid .footer p {
+    padding-right: 850px;
+  }
+  body .grid .footer footer {
+    position: fixed;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    width: 100%;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+  }
+  body .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "izq" "der";
+  }
+  body .grid .izq {
+    grid-area: izq;
+  }
+  body .grid .der {
+    grid-area: der;
+  }
+  body .grid .h1-ultimo-drop {
+    padding-left: 300px;
+    padding-top: 40px;
+    text-shadow: 5px 5px 30px;
+    color: #000000;
+  }
+  body .grid .h1-centrado {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 750px;
+    color: #a90000;
+    text-shadow: 5px 5px 25px #a90000;
+  }
+  body .grid .h2-mas-vendidos {
+    padding-left: 260px;
+    font-size: 30px;
+  }
+  body .grid .footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+  }
+  body .grid .container-2 {
+    margin-bottom: 40px;
+  }
+  body .grid .productos {
+    width: 100%;
+    padding-bottom: 400px;
+  }
+  body .grid .cajas {
+    margin: 0px;
+  }
+  body .grid .textos-alineados {
+    margin: 5px;
+  }
+  body .grid footer {
+    position: fixed;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    width: 100%;
+  }
+  body .grid footer p {
+    padding-right: 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  width: auto;
-  max-width: 1980px;
-}
-
-html {
-  font-size: 62, 5%;
 }
 
 @font-face {
@@ -324,117 +415,4 @@ header nav div img {
 /*acomode de h1*/
 .center {
   margin: 0 auto;
-}
-
-/* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "izq" "der";
-  }
-  .izq {
-    grid-area: izq;
-  }
-  .der {
-    grid-area: der;
-  }
-  .h1-ultimo-drop {
-    padding-left: 140px;
-    padding-top: 40px;
-    text-shadow: 5px 5px 30px;
-    color: #000000;
-  }
-  .header {
-    width: 1100%;
-  }
-  .h1-centrado {
-    top: 10px;
-    left: 10px;
-    width: 450px;
-    color: #a90000;
-    text-shadow: 5px 5px 25px #a90000;
-  }
-  .h2-mas-vendidos {
-    padding-left: 130px;
-    font-size: 30px;
-    padding-top: 10px;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100px;
-    height: 50px;
-    width: 100%;
-  }
-  .footer p {
-    padding-right: 850px;
-  }
-  .container-2 {
-    margin-bottom: 40px;
-    padding-left: 80px;
-  }
-}
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "izq" "der";
-  }
-  .izq {
-    grid-area: izq;
-  }
-  .der {
-    grid-area: der;
-  }
-  .h1-ultimo-drop {
-    padding-left: 300px;
-    padding-top: 40px;
-    text-shadow: 5px 5px 30px;
-    color: #000000;
-  }
-  .h1-centrado {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 750px;
-    color: #a90000;
-    text-shadow: 5px 5px 25px #a90000;
-  }
-  header {
-    width: 100%;
-  }
-  .h2-mas-vendidos {
-    padding-left: 260px;
-    font-size: 30px;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-  }
-  .container-2 {
-    margin-bottom: 40px;
-  }
-  .productos {
-    width: 100%;
-    padding-bottom: 400px;
-  }
-  .cajas {
-    margin: 0px;
-  }
-  .textos-alineados {
-    margin: 5px;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 20px;
-    height: 20px;
-    width: 100%;
-  }
-  footer p {
-    padding-right: 0px;
-  }
 }/*# sourceMappingURL=styles.css.map */
