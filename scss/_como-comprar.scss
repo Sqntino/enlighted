@@ -1,21 +1,29 @@
-.container-1{
-    background-color: #424141;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Mustica";
-    flex-direction: row;
-    text-align: center;
-    }
-    .flecha img{
-        margin-right: 100px;
-        width: 60px;
-    }
-.acomode-lista{
+.como-comprar{
+    position: absolute;
+    top: 10px;
+    left: 750px;
+    color: #2e2e2e;
+    font-size: 35px;
+    width: 300px;
+}
+.acomode-lista {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 23px;
     margin-top: 40px;
+
+    .cuadro2{
+        background-color: #4f4f4f;
+        border-radius: 40px;
+        padding: 30px 40px;
+        list-style: none;
+        box-shadow: 5px 5px 30px black;
+        li{
+            border: 2px solid rgb(49, 49, 49);
+            border-radius: 20px;
+            padding: 0 10px;
+            color: rgb(0, 0, 0);
+        }
+    }
 }

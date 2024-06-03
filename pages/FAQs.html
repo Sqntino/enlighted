@@ -4,42 +4,110 @@
 <meta name="keywords" content="pedido, ropa, compra, correo">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
 <title>FAQs</title>
 <header>
-    <div class="contenedor">
-        <a href="../index.html">
-            <img src="../assets/assets/flecha atras.png" alt="Atras" width="50px">
-        </a>
-        <h1 align="center">FAQs</h1>
-    </div>
+    <nav>
+        <div class="header">
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                    <h1 class="faqs1">FAQs</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categorias</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="shorts.html">Shorts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="remeras.html">Remeras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accesesorios.html">Accesorios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="FAQs.html">FAQs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="como-comprar.html">Como comprar</a>
+                                </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
 </header>
 
 <body>
-    <div class="columna" align="center">
-        <b>
-            <p class="blanco">¿Que pasa si viene el correo y no estoy para recibirlo?</p>
-        </b>
-        <p>El pedido lo puede recibir cualquier persona mayor de 18 años que se encuentre en tu domicilio. <br> Podes
-            hacer
-            el seguimiento desde OCA, para poder ver donde se encuentra el pedido, y asi evitar perder la visita del
-            correo.
-            <br>En caso de visita por parte del correo y que no haya alguien en el domicilio que lo pueda recibir, queda
-            en sucursal por 5 dias habiles para que lo retires personalmente. <br>Luego de ese plazo el paquete vuelve a
-            nuestra oficina.
-        </p>
-        <b>
-            <p class="blanco">¿Cuando llega mi pedido, donde veo el seguimiento?</p>
-        </b>
-        <p>Una vez que el pedido este empaquetado y OCA pase por nuestra oficina a retirarlo, se te envia por email el
-            detalle del seguimiento. </p>
-        <b>
-            <p class="blanco">¿Que pasa si no recibo mi pedido?</p>
-        </b>
-        <p>El paquete cuando no es recibido por parte del cliente retorna a nuestra oficina.
-            <br>Luego, una vez que llega a nuestra oficina se realiza el reintegro del monto de las prendas abonadas,
-            descontandose el 80% del valor del envio.
-        </p>
+    <div class="grid-faqs">
+        <div class="columna" align="center">
+            <div class="arriba">
+                <div class="cuadro">
+                    <h2 class="blanco">¿Que pasa si viene el correo y no estoy para recibirlo?</h2>
+                    <p>El pedido lo puede recibir cualquier persona mayor de 18 años que se encuentre en tu domicilio.
+                        <br>
+                        Podes
+                        hacer
+                        el seguimiento desde OCA, para poder ver donde se encuentra el pedido, y asi evitar perder la
+                        visita
+                        del
+                        correo.
+                        <br>En caso de visita por parte del correo y que no haya alguien en el domicilio que lo pueda
+                        recibir,
+                        queda
+                        en sucursal por 5 dias habiles para que lo retires personalmente. <br>Luego de ese plazo el
+                        paquete
+                        vuelve a
+                        nuestra oficina.
+                    </p>
+                </div>
+            </div>
+            <div class="medio">
+                <div class="cuadro">
+                    <h2 class="blanco">¿Cuando llega mi pedido, donde veo el seguimiento?</h2>
+                    <p>Una vez que el pedido este empaquetado y OCA pase por nuestra oficina a retirarlo, se te envia
+                        por
+                        email
+                        el
+                        detalle del seguimiento. </p>
+                </div>
+            </div>
+            <div class="abajo">
+                <div class="cuadro">
+                    <h2 class="blanco">¿Que pasa si no recibo mi pedido?</h2>
+                    <p>El paquete cuando no es recibido por parte del cliente retorna a nuestra oficina.
+                        <br>Luego, una vez que llega a nuestra oficina se realiza el reintegro del monto de las prendas
+                        abonadas,
+                        descontandose el 80% del valor del envio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-</div>

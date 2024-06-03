@@ -1,27 +1,59 @@
-.columna {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    .blanco {
-        color: #aaaaaa;
-        text-shadow: 5px 5px 10px black;
-        margin-top: 50px;
-    }
-}
-.contenedor {
+.header {
+    font-family: "Mustica";
     background-color: #424141;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Mustica";
-    flex-direction: row;
-    text-align: center;
-    img{
-        width: 60px;
-        margin-left: 10px;
+    line-height: 30px;
+
+    .faqs1 {
+        position: absolute;
+        top: 10px;
+        left: 880px;
+        color: #2e2e2e;
+        font-size: 35px;
     }
 }
 
+.columna {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+    .blanco {
+        color: #aaaaaa;
+        text-shadow: 5px 5px 10px black;
+        font-size: 20px;
+    }
+}
+
+.cuadro {
+    background-color: #4f4f4f;
+    margin-top: 100px;
+    border-radius: 30px;
+    width: 1300px;
+    box-shadow: 5px 5px 30px black;
+    padding: 25px;
+}
+
+.grid-faqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "arriba medio abajo";
+
+    .arriba {
+        grid-area: arriba;
+        padding-left: 200px;
+    }
+
+    .medio {
+        grid-area: medio;
+        padding-right: 500px;
+    }
+
+    .abajo {
+        grid-area: abajo;
+        padding-left: 350px;
+    }
+}
 

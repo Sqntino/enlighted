@@ -1,10 +1,19 @@
-.container-4 {
+.header {
+    font-family: "Mustica";
     background-color: #424141;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Mustica";
-    flex-direction: row;
+    line-height: 30px;
+
+    .accesorios {
+        position: absolute;
+        top: 10px;
+        left: 820px;
+        color: #000000;
+        font-size: 35px;
+    }
+}
+
+.center {
     text-align: center;
+    display: flex;
 }

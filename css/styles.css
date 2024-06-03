@@ -23,7 +23,7 @@ body {
   font-family: "Mustica";
   font-weight: 400;
   font-style: normal;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body .flex-container {
   display: flex;
@@ -94,31 +94,58 @@ body .h2-mas-vendidos {
   color: #000000;
 }
 
+.header {
+  font-family: "Mustica";
+  background-color: #424141;
+  height: 80px;
+  line-height: 30px;
+}
+.header .faqs1 {
+  position: absolute;
+  top: 10px;
+  left: 880px;
+  color: #2e2e2e;
+  font-size: 35px;
+}
+
 .columna {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px;
+  padding: 20px;
+  align-items: center;
 }
 .columna .blanco {
   color: #aaaaaa;
   text-shadow: 5px 5px 10px black;
-  margin-top: 50px;
+  font-size: 20px;
 }
 
-.contenedor {
-  background-color: #424141;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
-  text-align: center;
+.cuadro {
+  background-color: #4f4f4f;
+  margin-top: 100px;
+  border-radius: 30px;
+  width: 1300px;
+  box-shadow: 5px 5px 30px black;
+  padding: 25px;
 }
-.contenedor img {
-  width: 60px;
-  margin-left: 10px;
+
+.grid-faqs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "arriba medio abajo";
+}
+.grid-faqs .arriba {
+  grid-area: arriba;
+  padding-left: 200px;
+}
+.grid-faqs .medio {
+  grid-area: medio;
+  padding-right: 500px;
+}
+.grid-faqs .abajo {
+  grid-area: abajo;
+  padding-left: 350px;
 }
 
 .footer {
@@ -130,20 +157,13 @@ body .h2-mas-vendidos {
   width: 100%;
 }
 
-.container-1 {
-  background-color: #424141;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
-  text-align: center;
-}
-
-.flecha img {
-  margin-right: 100px;
-  width: 60px;
+.como-comprar {
+  position: absolute;
+  top: 10px;
+  left: 750px;
+  color: #2e2e2e;
+  font-size: 35px;
+  width: 300px;
 }
 
 .acomode-lista {
@@ -153,62 +173,75 @@ body .h2-mas-vendidos {
   font-size: 23px;
   margin-top: 40px;
 }
-
-.contenedor-2 {
-  background-color: #424141;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
-  text-align: center;
+.acomode-lista .cuadro2 {
+  background-color: #4f4f4f;
+  border-radius: 40px;
+  padding: 30px 40px;
+  list-style: none;
+  box-shadow: 5px 5px 30px black;
 }
-.contenedor-2 img {
+.acomode-lista .cuadro2 li {
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 20px;
+  padding: 0 10px;
+  color: rgb(0, 0, 0);
+}
+
+.sobre-nosotros1 {
   position: absolute;
-  left: 10;
-  top: 16px;
-  width: 60px;
+  top: 10px;
+  left: 750px;
+  color: #2e2e2e;
+  font-size: 35px;
+  width: 300px;
 }
 
-.imagen-centrada img {
+.separacion {
+  text-align: center;
+  margin: 60px;
+}
+
+.imagen-centrada {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.imagen-centrada img {
   width: 250px;
 }
 
-.container-1 {
-  background-color: #424141;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
-  text-align: center;
+.remeras1 {
+  position: absolute;
+  top: 10px;
+  left: 820px;
+  color: #000000;
+  font-size: 35px;
 }
 
-.container-3 {
-  background-color: #424141;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
-  text-align: center;
+.shorts1 {
+  position: absolute;
+  top: 10px;
+  left: 820px;
+  color: #000000;
+  font-size: 35px;
 }
 
-.container-4 {
+.header {
+  font-family: "Mustica";
   background-color: #424141;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Mustica";
-  flex-direction: row;
+  line-height: 30px;
+}
+.header .accesorios {
+  position: absolute;
+  top: 10px;
+  left: 820px;
+  color: #000000;
+  font-size: 35px;
+}
+
+.center {
   text-align: center;
+  display: flex;
 }
 
 /* mobile */
