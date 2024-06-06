@@ -666,7 +666,7 @@ body .h2-mas-vendidos {
 
 @font-face {
   font-family: "Mustica";
-  src: url(/assets/fuente/MusticaPro-SemiBold.otf);
+  src: url(../assets/fuente/MusticaPro-SemiBold.otf);
 }
 header nav li a {
   padding: 0 3px;
