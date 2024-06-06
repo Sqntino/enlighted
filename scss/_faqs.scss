@@ -3,21 +3,17 @@
     background-color: #424141;
     height: 80px;
     line-height: 30px;
-
-    .faqs1 {
-        position: absolute;
-        top: 10px;
-        left: 880px;
-        color: #2e2e2e;
-        font-size: 35px;
-    }
+}
+.faqs1 {
+    position: absolute;
+    top: 10px;
+    left: 880px;
+    color: #000000;
+    font-size: 35px;
 }
 
 .columna {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
 
     .blanco {
         color: #aaaaaa;
@@ -35,25 +31,17 @@
     padding: 25px;
 }
 
-.grid-faqs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "arriba medio abajo";
 
     .arriba {
-        grid-area: arriba;
         padding-left: 200px;
     }
 
     .medio {
-        grid-area: medio;
         padding-right: 500px;
     }
 
     .abajo {
-        grid-area: abajo;
         padding-left: 350px;
     }
-}
+
 

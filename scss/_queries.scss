@@ -2,12 +2,28 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
     .header {
-        width: 1000%;
+        width: 100%;
+
+        .accesorios {
+            left: 170px;
+        }
+
+        .faqs1 {
+            left: 220px;
+        }
+
+        .sobre-nosotros1 {
+            left: 120px;
+        }
+
+        .como-comprar {
+            left: 110px;
+        }
 
         .h1-centrado {
             top: 10px;
             left: 10px;
-            width: 400px;
+            width: 500px;
             color: #a90000;
             text-shadow: 5px 5px 25px #a90000;
         }
@@ -21,53 +37,119 @@
             "izq"
             "der";
 
-        .izq {
-            grid-area: izq;
-        }
-
-        .der {
-            grid-area: der;
-        }
 
         .h1-ultimo-drop {
-            padding-left: 140px;
+            padding-left: 180px;
             padding-top: 40px;
             text-shadow: 5px 5px 30px;
             color: #000000;
         }
 
         .h2-mas-vendidos {
-            padding-left: 130px;
+            padding-left: 170px;
             font-size: 30px;
             padding-top: 10px;
         }
 
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 50px;
-            height: 50px;
-            width: 80%;
-
-            p {
-                padding-right: 850px;
-            }
-
-            footer {
-                position: fixed;
-                bottom: 0;
-                width: 20px;
-                height: 20px;
-                width: 100%;
-            }
+        .container-2 {
+            padding-left: 50px;
         }
     }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: #424242;
+        text-align: center;
+    }
+
+    .remeras1 {
+        left: 170px;
+    }
+
+    .grid-acce {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr auto;
+        grid-template-areas: "izquierda"
+            "medio1"
+            "derecha2"
+            "garantia2"
+    }
+
+    .cuadro {
+        width: 500px;
+    }
+
+    .arriba {
+        padding-left: 0px;
+    }
+
+    .medio {
+        padding-right: 0px;
+    }
+
+    .abajo {
+        padding-left: 0px;
+    }
+
+    .ofrecemos {
+        h2 {
+            font-size: 30px;
+            padding-bottom: 90px;
+        }
+
+        width: 450px;
+    }
+
+    .cajas-ofrecimiento {
+        margin: 5px;
+        height: 200px;
+        width: 150px;
+
+        img {
+            width: 100px;
+        }
+
+        p {
+            padding-top: 10px;
+            font-size: 19px;
+        }
+    }
+
+    .info {
+        padding-top: 60px;
+    }
 }
+
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     header {
         width: 100%;
+
+        .h1-centrado {
+            left: 330px;
+        }
+
+        .remeras1 {
+            left: 320px;
+        }
+
+        .accesorios {
+            left: 320px;
+        }
+
+        .faqs1 {
+            left: 370px;
+        }
+
+        .sobre-nosotros1 {
+            left: 280px;
+        }
+
+        .como-comprar {
+            left: 270px;
+        }
     }
 
     body .grid {
@@ -76,68 +158,218 @@
         grid-template-areas:
             "izq"
             "der";
-            .izq {
-                grid-area: izq;
-            }
-        
-            .der {
-                grid-area: der;
-            }
-            .h1-ultimo-drop {
-                padding-left: 300px;
-                padding-top: 40px;
-                text-shadow: 5px 5px 30px;
-                color: #000000;
-            }
-        
-            .h1-centrado {
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                width: 750px;
-                color: #a90000;
-                text-shadow: 5px 5px 25px #a90000;
-            }
-        
-        
-            .h2-mas-vendidos {
-                padding-left: 260px;
-                font-size: 30px;
-            }
-        
-            .footer {
-                position: fixed;
-                bottom: 0;
-                height: 50px;
-            }
-        
-            .container-2 {
-                margin-bottom: 40px;
-            }
-        
-            .productos {
-                width: 100%;
-                padding-bottom: 400px;
-            }
-        
-            .cajas {
-                margin: 0px;
-            }
-        
-            .textos-alineados {
-                margin: 5px;
-            }
-        
-            footer {
-                position: fixed;
-                bottom: 0;
-                width: 20px;
-                height: 20px;
-                width: 100%;
-            }
-        
-            footer p {
-                padding-right: 0px;
-            }
+
+        .h1-ultimo-drop {
+            padding-left: 330px;
+            padding-top: 40px;
+            text-shadow: 5px 5px 30px;
+            color: #000000;
+        }
+
+
+
+        .h2-mas-vendidos {
+            padding-left: 330px;
+            font-size: 30px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+        }
+
+        .container-2 {
+            margin-bottom: 40px;
+            padding-left: 50px;
+        }
+
+        .productos {
+            width: 500px;
+            padding-bottom: 400px;
+        }
+
+        .cajas {
+            margin: 0px;
+        }
+
+        .textos-alineados {
+            margin: 5px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            padding-right: 0px;
         }
     }
+
+    .grid-acce {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr auto;
+        grid-template-areas: "izquierda"
+            "medio1"
+            "derecha2"
+            "garantia2"
+    }
+
+    .medias-cuadros {
+        width: 700px;
+        padding-left: 100px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4f4f4f;
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px;
+            color: #00000094;
+        }
+    }
+
+    .cuadro {
+        width: 800px;
+    }
+
+    .arriba {
+        padding-left: 0px;
+    }
+
+    .medio {
+        padding-right: 0px;
+    }
+
+    .abajo {
+        padding-left: 0px;
+    }
+
+    .ofrecemos {
+        h2 {
+            font-size: 40px;
+            padding-bottom: 90px;
+        }
+
+        width: 800px;
+    }
+
+    .cajas-ofrecimiento {
+        margin: 5px;
+        height: 250px;
+        width: 200px;
+
+        img {
+            width: 150px;
+        }
+
+        p {
+            padding-top: 10px;
+            font-size: 19px;
+        }
+    }
+
+    .info {
+        padding-top: 70px;
+    }
+}
+
+// desktop
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 100%;
+
+        .h1-centrado {
+            left: 820px;
+        }
+
+        .remeras1 {
+            left: 820px;
+        }
+
+        .accesorios {
+            left: 820px;
+        }
+
+        .faqs1 {
+            left: 820px;
+        }
+
+        .sobre-nosotros1 {
+            left: 750px;
+        }
+
+        .como-comprar {
+            left: 750px;
+        }
+    }
+
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "izq der";
+        }
+
+        .cajas {
+            .productos {
+                display: flex;
+                flex-flow: row wrap;
+                margin: 5% auto;
+                justify-content: center;
+            }
+
+            .textos-alineados {
+                text-align: center;
+                padding: 0px 30px;
+            }
+
+            .cajas img {
+                width: 230px;
+            }
+        }
+        .grid-nosotros {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 1fr;
+            height: 100vh;
+            grid-template-areas: "ofrecemos"
+                                "ofrecimiento"
+                                    "info";
+            .info{
+                text-align: center;
+                padding-top: 60px;
+                margin-bottom: 0;
+                p{
+                    margin-bottom: 0;
+                }
+                .instagram-logo{
+                    padding-bottom: 10px;
+                    width: 50px;
+                }
+            }
+        }
+        .grid-acce{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: "izquierda medio1 derecha2"
+                                ". garantia2 ."
+        }
+        .columna {
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+        .acomode-lista {
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            margin-top: 40px;
+    }
+}

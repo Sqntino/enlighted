@@ -10,7 +10,8 @@
   align-items: center;
   line-height: 30px;
 }
-.header .h1-centrado {
+
+.h1-centrado {
   position: absolute;
   top: 10px;
   left: 820px;
@@ -23,7 +24,9 @@ body {
   font-family: "Mustica";
   font-weight: 400;
   font-style: normal;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 body .flex-container {
   display: flex;
@@ -71,9 +74,6 @@ body .container-2 div {
 }
 body .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izq der";
 }
 body .izq {
   grid-area: izq;
@@ -100,19 +100,17 @@ body .h2-mas-vendidos {
   height: 80px;
   line-height: 30px;
 }
-.header .faqs1 {
+
+.faqs1 {
   position: absolute;
   top: 10px;
   left: 880px;
-  color: #2e2e2e;
+  color: #000000;
   font-size: 35px;
 }
 
 .columna {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
 }
 .columna .blanco {
   color: #aaaaaa;
@@ -129,22 +127,15 @@ body .h2-mas-vendidos {
   padding: 25px;
 }
 
-.grid-faqs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "arriba medio abajo";
-}
-.grid-faqs .arriba {
-  grid-area: arriba;
+.arriba {
   padding-left: 200px;
 }
-.grid-faqs .medio {
-  grid-area: medio;
+
+.medio {
   padding-right: 500px;
 }
-.grid-faqs .abajo {
-  grid-area: abajo;
+
+.abajo {
   padding-left: 350px;
 }
 
@@ -152,26 +143,21 @@ body .h2-mas-vendidos {
   background-color: #424242;
   padding: 1em 0;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 .como-comprar {
   position: absolute;
   top: 10px;
   left: 750px;
-  color: #2e2e2e;
+  color: #000000;
   font-size: 35px;
   width: 300px;
 }
 
 .acomode-lista {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 23px;
-  margin-top: 40px;
 }
 .acomode-lista .cuadro2 {
   background-color: #4f4f4f;
@@ -187,11 +173,15 @@ body .h2-mas-vendidos {
   color: rgb(0, 0, 0);
 }
 
+.body-nosotros {
+  overflow-y: hidden;
+}
+
 .sobre-nosotros1 {
   position: absolute;
   top: 10px;
   left: 750px;
-  color: #2e2e2e;
+  color: #000000;
   font-size: 35px;
   width: 300px;
 }
@@ -201,12 +191,69 @@ body .h2-mas-vendidos {
   margin: 60px;
 }
 
-.imagen-centrada {
-  display: flex;
-  justify-content: center;
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  height: 100vh;
+  grid-template-areas: "ofrecemos" "ofrecimiento" "info";
 }
-.imagen-centrada img {
-  width: 250px;
+.grid-nosotros .ofrecemos {
+  grid-area: ofrecemos;
+  margin: 30px;
+}
+.grid-nosotros .ofrecimiento {
+  grid-area: ofrecimiento;
+}
+.grid-nosotros .info {
+  grid-area: info;
+}
+
+.centro {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 50px;
+  text-shadow: 5px 5px 30px;
+  color: #000000;
+}
+
+.ofrecimiento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.info {
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 0;
+}
+.info p {
+  margin-bottom: 0;
+}
+.info .instagram-logo {
+  padding-bottom: 10px;
+  width: 50px;
+}
+
+.cajas-ofrecimiento {
+  background-color: #4f4f4f;
+  margin: 5px;
+  height: 350px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px;
+  color: rgba(0, 0, 0, 0.5803921569);
+}
+.cajas-ofrecimiento img {
+  width: 200px;
+  padding-top: 20px;
+}
+.cajas-ofrecimiento p {
+  padding-top: 40px;
+  font-size: 30px;
 }
 
 .remeras1 {
@@ -231,10 +278,11 @@ body .h2-mas-vendidos {
   height: 80px;
   line-height: 30px;
 }
-.header .accesorios {
+
+.accesorios {
   position: absolute;
   top: 10px;
-  left: 820px;
+  left: 840px;
   color: #000000;
   font-size: 35px;
 }
@@ -244,15 +292,104 @@ body .h2-mas-vendidos {
   display: flex;
 }
 
+.grid-acce {
+  display: grid;
+}
+
+.medias-cuadros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.medias-cuadros div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f4f4f;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px;
+  color: rgba(0, 0, 0, 0.5803921569);
+}
+
+.izquierda {
+  grid-area: izquierda;
+}
+.izquierda h1 {
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 5px 5px 30px;
+  color: #000000;
+}
+
+.medio1 {
+  grid-area: medio1;
+}
+.medio1 h1 {
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 5px 5px 30px;
+  color: #000000;
+}
+
+.derecha2 {
+  grid-area: derecha2;
+}
+.derecha2 h1 {
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 5px 5px 30px;
+  color: #000000;
+}
+
+.garantia {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.cajas-garantia {
+  background-color: #4f4f4f;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 40px;
+  box-shadow: 5px 5px 30px black;
+  padding: 30px 50px;
+  color: black;
+  margin-top: 60px;
+}
+
+.garantia2 {
+  grid-area: garantia2;
+}
+
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
-    width: 1000%;
+    width: 100%;
+  }
+  .header .accesorios {
+    left: 170px;
+  }
+  .header .faqs1 {
+    left: 220px;
+  }
+  .header .sobre-nosotros1 {
+    left: 120px;
+  }
+  .header .como-comprar {
+    left: 110px;
   }
   .header .h1-centrado {
     top: 10px;
     left: 10px;
-    width: 400px;
+    width: 500px;
     color: #a90000;
     text-shadow: 5px 5px 25px #a90000;
   }
@@ -261,39 +398,67 @@ body .h2-mas-vendidos {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "izq" "der";
   }
-  body .grid .izq {
-    grid-area: izq;
-  }
-  body .grid .der {
-    grid-area: der;
-  }
   body .grid .h1-ultimo-drop {
-    padding-left: 140px;
+    padding-left: 180px;
     padding-top: 40px;
     text-shadow: 5px 5px 30px;
     color: #000000;
   }
   body .grid .h2-mas-vendidos {
-    padding-left: 130px;
+    padding-left: 170px;
     font-size: 30px;
     padding-top: 10px;
   }
-  body .grid .footer {
-    position: fixed;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    width: 80%;
+  body .grid .container-2 {
+    padding-left: 50px;
   }
-  body .grid .footer p {
-    padding-right: 850px;
-  }
-  body .grid .footer footer {
-    position: fixed;
-    bottom: 0;
-    width: 20px;
-    height: 20px;
+  .footer {
     width: 100%;
+    height: 100px;
+    background-color: #424242;
+    text-align: center;
+  }
+  .remeras1 {
+    left: 170px;
+  }
+  .grid-acce {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas: "izquierda" "medio1" "derecha2" "garantia2";
+  }
+  .cuadro {
+    width: 500px;
+  }
+  .arriba {
+    padding-left: 0px;
+  }
+  .medio {
+    padding-right: 0px;
+  }
+  .abajo {
+    padding-left: 0px;
+  }
+  .ofrecemos {
+    width: 450px;
+  }
+  .ofrecemos h2 {
+    font-size: 30px;
+    padding-bottom: 90px;
+  }
+  .cajas-ofrecimiento {
+    margin: 5px;
+    height: 200px;
+    width: 150px;
+  }
+  .cajas-ofrecimiento img {
+    width: 100px;
+  }
+  .cajas-ofrecimiento p {
+    padding-top: 10px;
+    font-size: 19px;
+  }
+  .info {
+    padding-top: 60px;
   }
 }
 /* tablet */
@@ -301,33 +466,37 @@ body .h2-mas-vendidos {
   header {
     width: 100%;
   }
+  header .h1-centrado {
+    left: 330px;
+  }
+  header .remeras1 {
+    left: 320px;
+  }
+  header .accesorios {
+    left: 320px;
+  }
+  header .faqs1 {
+    left: 370px;
+  }
+  header .sobre-nosotros1 {
+    left: 280px;
+  }
+  header .como-comprar {
+    left: 270px;
+  }
   body .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "izq" "der";
   }
-  body .grid .izq {
-    grid-area: izq;
-  }
-  body .grid .der {
-    grid-area: der;
-  }
   body .grid .h1-ultimo-drop {
-    padding-left: 300px;
+    padding-left: 330px;
     padding-top: 40px;
     text-shadow: 5px 5px 30px;
     color: #000000;
   }
-  body .grid .h1-centrado {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 750px;
-    color: #a90000;
-    text-shadow: 5px 5px 25px #a90000;
-  }
   body .grid .h2-mas-vendidos {
-    padding-left: 260px;
+    padding-left: 330px;
     font-size: 30px;
   }
   body .grid .footer {
@@ -337,9 +506,10 @@ body .h2-mas-vendidos {
   }
   body .grid .container-2 {
     margin-bottom: 40px;
+    padding-left: 50px;
   }
   body .grid .productos {
-    width: 100%;
+    width: 500px;
     padding-bottom: 400px;
   }
   body .grid .cajas {
@@ -357,6 +527,136 @@ body .h2-mas-vendidos {
   }
   body .grid footer p {
     padding-right: 0px;
+  }
+  .grid-acce {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas: "izquierda" "medio1" "derecha2" "garantia2";
+  }
+  .medias-cuadros {
+    width: 700px;
+    padding-left: 100px;
+  }
+  .medias-cuadros div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f4f4f;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+    color: rgba(0, 0, 0, 0.5803921569);
+  }
+  .cuadro {
+    width: 800px;
+  }
+  .arriba {
+    padding-left: 0px;
+  }
+  .medio {
+    padding-right: 0px;
+  }
+  .abajo {
+    padding-left: 0px;
+  }
+  .ofrecemos {
+    width: 800px;
+  }
+  .ofrecemos h2 {
+    font-size: 40px;
+    padding-bottom: 90px;
+  }
+  .cajas-ofrecimiento {
+    margin: 5px;
+    height: 250px;
+    width: 200px;
+  }
+  .cajas-ofrecimiento img {
+    width: 150px;
+  }
+  .cajas-ofrecimiento p {
+    padding-top: 10px;
+    font-size: 19px;
+  }
+  .info {
+    padding-top: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+  .header .h1-centrado {
+    left: 820px;
+  }
+  .header .remeras1 {
+    left: 820px;
+  }
+  .header .accesorios {
+    left: 820px;
+  }
+  .header .faqs1 {
+    left: 820px;
+  }
+  .header .sobre-nosotros1 {
+    left: 750px;
+  }
+  .header .como-comprar {
+    left: 750px;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izq der";
+  }
+  .cajas .productos {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5% auto;
+    justify-content: center;
+  }
+  .cajas .textos-alineados {
+    text-align: center;
+    padding: 0px 30px;
+  }
+  .cajas .cajas img {
+    width: 230px;
+  }
+  .grid-nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    height: 100vh;
+    grid-template-areas: "ofrecemos" "ofrecimiento" "info";
+  }
+  .grid-nosotros .info {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+  .grid-nosotros .info p {
+    margin-bottom: 0;
+  }
+  .grid-nosotros .info .instagram-logo {
+    padding-bottom: 10px;
+    width: 50px;
+  }
+  .grid-acce {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "izquierda medio1 derecha2" ". garantia2 .";
+  }
+  .columna {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .acomode-lista {
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 40px;
   }
 }
 * {
@@ -412,13 +712,8 @@ header nav div img {
 .productos {
   display: flex;
   flex-flow: row wrap;
-  width: 1400px;
   margin: 5% auto;
   justify-content: center;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  display: flex;
 }
 
 .textos-alineados {
@@ -439,10 +734,6 @@ header nav div img {
 .textos-alineados {
   text-align: center;
   padding: 0px 30px;
-}
-
-.flecha {
-  margin-left: 10px;
 }
 
 /*acomode de h1*/

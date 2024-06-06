@@ -65,13 +65,8 @@ header nav div img {
 .productos {
     display: flex;
     flex-flow: row wrap;
-    width: 1400px;
     margin: 5% auto;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    display: flex;
 }
 
 .textos-alineados {
@@ -98,10 +93,6 @@ header nav div img {
 }
 
 // ------------------------------------------
-
-.flecha {
-    margin-left: 10px;
-}
 
 /*acomode de h1*/
 .center {

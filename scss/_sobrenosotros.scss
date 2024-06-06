@@ -1,20 +1,78 @@
-.sobre-nosotros1{
+.body-nosotros{
+    overflow-y: hidden;
+}
+.sobre-nosotros1 {
     position: absolute;
     top: 10px;
     left: 750px;
-    color: #2e2e2e;
+    color: #000000;
     font-size: 35px;
     width: 300px;
 }
-.separacion{
-        text-align: center;
-        margin: 60px;
-}
-.imagen-centrada {
-    display: flex;
-    justify-content: center;
 
-    img {
-        width: 250px;
+.separacion {
+    text-align: center;
+    margin: 60px;
+}
+
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    height: 100vh;
+    grid-template-areas: "ofrecemos"
+                        "ofrecimiento"
+                            "info";
+    .ofrecemos{
+        grid-area: ofrecemos;
+        margin: 30px;
+    }
+    .ofrecimiento{
+        grid-area: ofrecimiento;
+    }
+    .info{
+        grid-area: info;
+    } 
+}
+.centro{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
+    text-shadow: 5px 5px 30px;
+    color: #000000;
+}
+.ofrecimiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.info{
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 0;
+    p{
+        margin-bottom: 0;
+    }
+    .instagram-logo{
+        padding-bottom: 10px;
+        width: 50px;
     }
 }
+.cajas-ofrecimiento{
+    background-color: #4f4f4f;
+    margin: 5px;
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+    color: #00000094;
+    img{
+        width: 200px; padding-top: 20px;
+    }
+    p{
+        padding-top: 40px; font-size: 30px;
+    }
+}
+
